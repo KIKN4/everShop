@@ -1,0 +1,18 @@
+<div class="card">
+  <img [src]="product.thumbnail" class="card-img-top" [alt]="product.title" />
+  <div class="card-body">
+    <h5 class="card-title">
+      {{ product.title }}
+    </h5>
+    <h6 class="text-secondary">
+      {{ product.price.current | currency : "₾" }}
+    </h6>
+    <p class="card-text">
+      {{ product.description }}
+    </p>
+    <p class="text-secondary">
+      {{ product.issueDate | date : "yyyy" }}
+    </p>
+    <button href="#" class="btn btn-primary">Add to Cart</button>
+  </div>
+</div>

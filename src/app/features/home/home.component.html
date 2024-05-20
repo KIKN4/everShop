@@ -1,0 +1,14 @@
+<div class="filter">
+  <label for="filter-key">Filter</label>
+  <input
+    class="form-control"
+    id="filter-key"
+    type="text"
+    [(ngModel)]="filterKey"
+  />
+</div>
+<div class="products-grid">
+  @for (product of products | productsFilter: filterKey ; track product.id) {
+  <app-product-card [product]="product"></app-product-card>
+  }
+</div>

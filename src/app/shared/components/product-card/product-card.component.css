@@ -1,0 +1,24 @@
+.card {
+  cursor: pointer;
+  text-align: center;
+  max-width: 300px;
+  transition: all 1s ease-in-out;
+}
+
+.card:focus {
+  color: red;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+img {
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
+}
+
+.card-text {
+  font-size: 13px;
+  margin: 20px 0;
+  width: 250px;
+  height: 90px;
+}
