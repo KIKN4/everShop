@@ -5,8 +5,8 @@ h1 {
 
 .products-grid {
   margin-top: 100px;
-  display: grid;
-  grid-template-columns: repeat(4, minmax(250px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: 1.5rem;
 }
 
@@ -14,6 +14,6 @@ h1 {
   margin: 4rem;
 }
 
-app-cart {
+app-product-card {
   margin: 0 auto;
 }
