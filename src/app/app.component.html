@@ -1,15 +1,21 @@
 <app-header>
   <a header-title class="navbar-brand">Navbar</a>
   <form header-actions class="d-flex" role="search">
+    <button type="button" class="btn" (click)="changePage('home')">Home</button>
+    <button type="button" class="btn" (click)="changePage('cart')">Cart</button>
     <input
       class="form-control me-2"
       type="search"
       placeholder="Search"
       aria-label="Search"
     />
-    <button class="btn btn-outline-success" type="submit">Search</button>
+    <button class="btn btn-outline-success" type="button">Search</button>
   </form>
 </app-header>
 <div class="container">
+  @if( currentPage==='home'){
   <app-home />
+  } @else if (currentPage==='cart'){
+  <app-cart />
+  }
 </div>

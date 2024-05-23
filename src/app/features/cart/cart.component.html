@@ -1,1 +1,10 @@
-<p>cart works!</p>
+<h1><i class="fa-solid fa-cart-shopping"></i></h1>
+<div class="products-grid">
+  @for(product of cartProducts$ | async; track product.id){
+  <app-product-card
+    [product]="product"
+    [deleteBtnVisible]="true"
+    (deleteProduct)="onDeleteProduct($event)"
+  ></app-product-card>
+  }
+</div>

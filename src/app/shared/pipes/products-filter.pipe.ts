@@ -11,7 +11,8 @@ export class ProductsFilterPipe implements PipeTransform {
     return value.filter(
       (prod) =>
         prod.title.toLowerCase().includes(key) ||
-        prod.description.toLowerCase().includes(key)
+        prod.description.toLowerCase().includes(key) ||
+        prod.issueDate.includes(key)
     );
   }
 }

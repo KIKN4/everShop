@@ -18,7 +18,7 @@ export const PRODUCTS: Product[] = [
     id: 'fasfasf',
     title: 'MacBook Pro M2 Pro',
     description:
-      'Apple MacBook Air 15.3 inch MQKW3B/A M2 Chip 8GB/256GB SSD Midnight, Apple M2(5nm), Apple 10-core GPU, 8GB RAM SSD 256GB, MacOS',
+      'Apple MacBook Pro 16 inch MQKW3B/A M2 Chip 8GB/256GB SSD Midnight, Apple M2(5nm), Apple 10-core GPU, 8GB RAM SSD 256GB, MacOS',
     thumbnail:
       'https://zoommer.ge/_next/image?url=https%3A%2F%2Fs3.zoommer.ge%2Fzoommer-images%2Fthumbs%2F0194162_apple-macbook-air-153-inch-2023-mqkw3ba-m2-chip-8gb256gb-ssd-midnight-apple-m25nm-apple-10-core-gpu-_550.jpeg&w=384&q=100',
     issueDate: '2023-08-29T10:17:29.326Z',

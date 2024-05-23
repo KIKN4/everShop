@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Product } from '../types/product';
 import { CurrencyPipe, DatePipe } from '@angular/common';
 
@@ -11,4 +11,7 @@ import { CurrencyPipe, DatePipe } from '@angular/common';
 })
 export class ProductCardComponent {
   @Input({ required: true }) product!: Product;
+  @Input() deleteBtnVisible = false;
+  @Output() addToCart = new EventEmitter<string>();
+  @Output() deleteProduct = new EventEmitter<string>();
 }
