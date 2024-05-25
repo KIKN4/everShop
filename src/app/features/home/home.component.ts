@@ -3,7 +3,7 @@ import { ProductCardComponent } from '../../shared/components/product-card/produ
 import { FormsModule } from '@angular/forms';
 import { ProductsFilterPipe } from '../../shared/pipes/products-filter.pipe';
 import { ProductsService } from '../../shared/services/products.service';
-import { Product } from '../../shared/components/types/product';
+import { Product } from '../../shared/types/product';
 
 @Component({
   selector: 'app-home',

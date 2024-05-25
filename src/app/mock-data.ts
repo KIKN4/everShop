@@ -1,4 +1,4 @@
-import { Product } from './shared/components/types/product';
+import { Product } from './shared/types/product';
 
 export const PRODUCTS: Product[] = [
   {
